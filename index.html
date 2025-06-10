@@ -6,36 +6,38 @@
   <title>Internet iPC</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
-  <link href="img/favicon.ico" rel="icon">
-    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-    <link href="img/android-chrome-192x192.png" rel="android-chrome-192x192">
-    <link href="img/android-chrome-512x512.png" rel="android-chrome-512x512">
-    <link href="img/favicon-16x16.png" rel="favicon-16x16">
-    <link href="img/favicon-32x32.png" rel="favicon-32x32">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="sidebar">
+  <div class="glass-sidebar">
     <button id="sidebar-toggle"><i class="fas fa-bars"></i></button>
     <div class="sidebar-content">
-      <button id="new-chat">+ New Chat</button>
+      <button id="new-chat">+ New Search</button>
       <div class="conversation-list">
-        <p class="conversation-label">Previous Conversations</p>
-        <div class="conversation">No conversation yet</div>
+        <p class="conversation-label">Neural Logs</p>
+        <div class="conversation">Awaiting input...</div>
       </div>
     </div>
   </div>
 
-  <div class="chat-container light-mode">
-    <header class="chat-header">
-      <h1>Internet <span>iPC</span></h1>
+  <div class="chat-core light-mode" id="chat-container">
+    <header class="neon-header">
+      <h1><i class="fas fa-brain-circuit"></i> <span class="brand">Internet</span> iPC</h1>
       <label class="switch">
         <input type="checkbox" id="mode-toggle">
         <span class="slider round"></span>
       </label>
     </header>
-    <div class="chat-box" id="chat-box"></div>
-    <div class="input-container">
-      <input type="text" id="user-input" placeholder="Type your message..." />
+
+    <div class="chat-stream" id="chat-box">
+      <div class="welcome">
+        <h2>👾 Welcome, User</h2>
+        <p>This is <strong>Internet<p1>iPC</p1></strong>. Ask anything — I'll explore the web instantly.</p>
+      </div>
+    </div>
+
+    <div class="neon-input-box">
+      <input type="text" id="user-input" placeholder="Ask your question... 🧠" />
       <button id="send-button"><i class="fas fa-paper-plane"></i></button>
     </div>
   </div>
