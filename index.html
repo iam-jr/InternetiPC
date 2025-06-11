@@ -9,13 +9,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  
   <div class="glass-sidebar">
     <button id="sidebar-toggle"><i class="fas fa-bars"></i></button>
     <div class="sidebar-content">
       <button id="new-chat">+ New Search</button>
       <div class="conversation-list">
-        <p class="conversation-label">Neural Logs</p>
-        <div class="conversation">Awaiting input...</div>
+       <div id="neural-logs" style="border: 1px solid #ccc; padding: 10px; max-height: 200px; overflow-y: auto;">
+  <h3 id="logs-toggle" style="cursor: pointer; user-select: none;">
+    Neural Logs (Previous Conversations) <span id="toggle-icon">▶</span>
+  </h3>
+  <ul id="logs-list" style="display: none; margin-top: 10px;"></ul>
+</div>
       </div>
     </div>
   </div>
